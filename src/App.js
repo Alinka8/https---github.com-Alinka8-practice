@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Todoinput from "./components/todo-input/Todo-input";
+import GutterlessList from "./components/todo-input/list-group/List-group";
+import "./App.css";
 
 function App() {
+  const config = { color: "red" };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input abc={config} />
+      <Todoinput />
+      <GutterlessList />
     </div>
   );
 }
